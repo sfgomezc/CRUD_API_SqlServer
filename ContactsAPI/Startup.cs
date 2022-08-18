@@ -28,7 +28,8 @@ namespace ContactsAPI
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ContactsAPI", Version = "v1" });
             });
-            services.AddDbContext<ContactsAPIDbContext>(options => options.UseInMemoryDatabase("ContactsDb"));
+            //services.AddDbContext<ContactsAPIDbContext>(options => options.UseInMemoryDatabase("ContactsDb"));
+            services.AddDbContext<ContactsAPIDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ContactsApiConnectionStrings")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
