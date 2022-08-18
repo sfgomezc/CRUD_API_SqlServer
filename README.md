@@ -1,6 +1,6 @@
 # CRUD_API_SqlServer
 
-Proyecto API en .NET 5 que permite manejo de contacto mediante un CRUD básico en una sola tabla, con almacenamiento en base de datos Azure SQL.
+Proyecto API en .NET 5 que permite manejo de contacto mediante un CRUD bï¿½sico en una sola tabla, con almacenamiento en base de datos Azure SQL.
 
 Requiere del paquete:
 ```
@@ -8,7 +8,7 @@ Microsoft.EntityFrameworkCore.SqlServer v3.1.28
 Microsoft.EntityFrameworkCore.Tools v3.1.28
 ```
 
-Comandos para migración. El primero genera el modelo con las tablas y campos, el segundo comando actualiza la base de datos:
+Comandos para migraciï¿½n. El primero genera el modelo con las tablas y campos, el segundo comando actualiza la base de datos:
 ```
 Add-Migration "mensaje de migracion"
 Update-Database
@@ -17,7 +17,7 @@ Update-Database
 ![alt text](https://github.com/sfgomezc/CRUD_API_InMemory/blob/master/Img_API.png?raw=true)
 
 POST  
-https://crud-api-inmemory.azurewebsites.net/api/contacts
+https://crud-api-sqlserver.azurewebsites.net/api/contacts
 ```
 {
   "fullName": "Steven Gomez",
@@ -28,13 +28,13 @@ https://crud-api-inmemory.azurewebsites.net/api/contacts
 ```
 
 GET  
-https://crud-api-inmemory.azurewebsites.net/api/contacts
+https://crud-api-sqlserver.azurewebsites.net/api/contacts
 
 GET ```{id}```  
-https://crud-api-inmemory.azurewebsites.net/api/contacts/1eb1149f-7a1e-4c87-8560-88d4fc0e1114
+https://crud-api-sqlserver.azurewebsites.net/api/contacts/1eb1149f-7a1e-4c87-8560-88d4fc0e1114
 
 PUT  
-https://crud-api-inmemory.azurewebsites.net/api/contacts/c7d062dc-2456-40a4-9a5f-3c4fc8e780af
+https://crud-api-sqlserver.azurewebsites.net/api/contacts/c7d062dc-2456-40a4-9a5f-3c4fc8e780af
 ```
 {
   "fullName": "Steven Gomez C",
@@ -45,5 +45,5 @@ https://crud-api-inmemory.azurewebsites.net/api/contacts/c7d062dc-2456-40a4-9a5f
 ```
 
 DELETE  
-https://crud-api-inmemory.azurewebsites.net/api/contacts/c7d062dc-2456-40a4-9a5f-3c4fc8e780af
+https://crud-api-sqlserver.azurewebsites.net/api/contacts/c7d062dc-2456-40a4-9a5f-3c4fc8e780af
 
